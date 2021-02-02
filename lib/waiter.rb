@@ -25,15 +25,15 @@ class Waiter
   end
 
   def best_tipper
-    best_tipper = nil
+    best_customer = nil
     best_tip = 0
-    best_tipper = Meal.all.select do |meal|
+    best_meal = Meal.all.select do |meal|
       if meal.tip > best_tip
         best_tip = meal.tip
-        best_tipper = meal.customer
-      end
+        best_customer = meal.customer
+       end
     end
-    return best_tipper
+    return best_customer
   end
 
 end
