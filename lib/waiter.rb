@@ -27,7 +27,9 @@ class Waiter
   def self.best_tipper
     
     best tipper = nil
-    tips = self.meals.sort_by
+    tips = self.meals
+    just_tips = tips.each{ |t| t[3]}
+    
     
 
 end
