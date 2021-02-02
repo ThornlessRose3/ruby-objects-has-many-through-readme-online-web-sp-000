@@ -33,7 +33,7 @@ class Waiter
         best_tipper = meal.customer
       end
     end
-    best_tipper.name
+    best_tipper.
   end
 
 end
