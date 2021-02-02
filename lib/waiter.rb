@@ -33,8 +33,9 @@ class Waiter
         best_tipper = meal
       end
     end
-    best_tipper.all.select do |meal|
-      meal.
+    Meal.all.select do |meal|
+      meal.waiter == self && meal.tip == best_tip
+  
   end
 
 end
