@@ -33,7 +33,8 @@ class Waiter
         best_tipper = meal
       end
     end
-    best_tipper
+    best_tipper.all.select do |meal|
+      meal.
   end
 
 end
