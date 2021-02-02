@@ -17,12 +17,12 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
   
-  def meals
-    
+  def waiters
+    meals.map do |meal|
+      meal.waiter
+    end
   end
   
-  def waiters
-    
-  end
+
   
 end
