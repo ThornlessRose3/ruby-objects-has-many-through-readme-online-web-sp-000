@@ -29,7 +29,8 @@ class Waiter
     best_tip = 0
     best_tipper = Meal.all.select do |meal|
       if meal.tip > best_tip
-      best_tipper = meal.customer
+        best_tip = meal.tip
+        best_tipper = meal.customer
       end
     end
     best_tipper
