@@ -33,7 +33,7 @@ class Waiter
         best_tipper = meal
       end
     end
-    return best_tipper[1]
+    return best_tipper[:customer]
   end
 
 end
